@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud-app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body class="bg-zinc-800">
+    <h1 class="text-rose-500 text-center font-semibold text-xl">Crud-app</h1>
+
+    <div class="main-container mx-auto md:w-[60%]">
+      <form id="form" class="">
+        <div class="mb-2">
+          <label for="firstName" class="text-white">First Name : </label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter first name"
+            class="bg-gray-50 p-2 rounded border w-full hover:bg-gray-200"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="lastName" class="text-white">Last name : </label>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Enter last name"
+            class="bg-gray-50 p-2 rounded border w-full hover:bg-gray-200"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="roll-number" class="text-white">Roll No : </label>
+          <input
+            type="text"
+            id="roll-number"
+            placeholder="Enter Roll Number"
+            class="bg-gray-50 p-2 rounded border w-full hover:bg-gray-200"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            name=""
+            id="submit"
+            value="Submit"
+            class="bg-green-400 p-2 rounded-sm text-white cursor-pointer hover:bg-green-500"
+          />
+        </div>
+      </form>
+
+      <div class="overflow-x-auto mt-5">
+        <table
+          class="w-full border border-gray-200 bg-white text-sm text-left text-gray-700"
+        >
+          <thead class="bg-zinc-800 text-xs uppercase text-gray-600">
+            <tr>
+              <th class="px-4 py-2 border-b text-white text-center">Sr No</th>
+              <th class="px-4 py-2 border-b text-white text-center">
+                First Name
+              </th>
+              <th class="px-4 py-2 border-b text-white text-center">
+                Last Name
+              </th>
+              <th class="px-4 py-2 border-b text-white text-center">
+                Roll Number
+              </th>
+              <th class="px-4 py-2 border-b text-white text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- table data add here  -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
